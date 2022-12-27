@@ -18,10 +18,10 @@ if (PHP_SAPI !== 'cli') {
     die('uuid should be invoked via the CLI version of PHP, not the ' . PHP_SAPI . ' SAPI' . PHP_EOL);
 }
 
-$files = array(
+$files = [
     __DIR__ . '/../vendor/autoload.php',
     __DIR__ . '/../../../autoload.php',
-);
+];
 
 foreach ($files as $file) {
     if (file_exists($file)) {
